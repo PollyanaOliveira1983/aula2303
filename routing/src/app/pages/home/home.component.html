@@ -1,0 +1,21 @@
+<style>
+  .container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
+
+<div class="container">
+<mat-form-field appearance="outline">
+  <mat-label>Pesquise um produto</mat-label>
+  <input
+    type="text"
+    matInput
+    [(ngModel)]="productName"
+    (keyup.enter)="findProduct()"
+  >
+</mat-form-field>
+</div>
